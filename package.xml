@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package>
+  <name>tf_look_at_tf</name>
+  <version>0.0.0</version>
+  <description>The tf_look_at_tf package</description>
+
+  <maintainer email="gstavrinos@iit.demokritos.gr">George Stavrinos</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+  </export>
+</package>
