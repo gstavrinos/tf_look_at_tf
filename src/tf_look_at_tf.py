@@ -47,7 +47,6 @@ def tf_callback(tf2):
                 rospy.Time.now(),
                 target_tf,
                 'world')
-        # Position of main_tf is in 3,3 so dx = 1 and dy = 1
         main_pos = Point()
         main_pos.x = 2 * math.cos(angle)
         main_pos.y = 2 * math.sin(angle)
@@ -55,7 +54,6 @@ def tf_callback(tf2):
         dy = ty - main_pos.y
         yaw = math.atan2(dy,dx)
         main_quat = tf.transformations.quaternion_from_euler(0, 0, yaw)
-
         tf_broadcaster.sendTransform(
                 (main_pos.x, main_pos.y, main_pos.z),
                 main_quat,
